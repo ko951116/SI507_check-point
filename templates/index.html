@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>RESTAURANTS</title>
+</head>
+<body>
+
+    <h1>Welcome to Restaurants Recommender</h1>
+    <form action="/result" method="POST">
+        <p>
+            <br/>1. Search restaurants by the city name: <input name="search_term" type="text"/>
+            <input name="search" type="submit" value="search"/>
+        </p>
+
+        <p>
+            2. Search restaurants based on your current location 
+            <input name="Go" type="submit" value="Go"/>
+        </p>
+
+    </form>
+    <div id="map" style="width:800px; height:400px;"></div>
+</body>
+</html>

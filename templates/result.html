@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>Result</title>
+    <style>
+        table, th {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click "More Info" for more information!</h1>
+    <!-- <table>
+        <tr>
+            <th>Restaurant</th>
+            {% for restaurant in final_restaurants %}
+            <th>{{restaurant}}</th>
+            {% endfor %}
+           
+        </tr>
+        <tr>
+            <th>Price</th>
+            {% for price in price %}
+            <th>{{price}}</th>
+            {% endfor %}
+           
+        </tr>
+        <tr>
+            <th>Image</th>
+            {% for img in img %}
+            <th><img src="{{img}}" alt="" style="width: 110px; height: 80px;"></th>
+            {% endfor %}
+           
+        </tr>
+        <tr>
+            <th>URL</th>
+            {% for url in final_url %}
+            <th><a target="_blank" href={{url}}>More Info</a></th>
+            {% endfor %}
+        </tr>
+    </table> -->
+
+    <div>
+
+        <table style="width: 50%;">
+            <tr> 
+                <th>Restaurant Name</th>
+                <th>price</th>
+                <th>rating</th>
+                <th>Link</th>
+            </tr>
+            {% for fin in final %}
+            <tr> 
+                <th>{{fin[0]}}</th>
+                <th>{{fin[1]}}</th>
+                <th>{{fin[2]}}</th>
+                <th><img src="{{fin[3]}}" alt="" style="width: 110px; height: 80px;"></th>
+                <th><a target="_blank" href={{fin[4]}}>More Info</a></th>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+        
+
+
+    </div>
+
+</body>
+</html>
